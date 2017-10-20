@@ -2,11 +2,55 @@
 <html>
 <head>
 	<title>RxJS Boiler</title>
+	<style>
+		body {
+			background: linear-gradient(45deg, rgba(255,33,229,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+			height: 100vh 
+		}
+		.wrapper {
+			width: 800px;
+			margin: 50px auto;
+			color: #fff;
+			text-align: center; 
+		}
+		#clock {
+			margin: 5% auto;
+			font-size: 4em; 
+		}
+		button {
+			border-radius: 5px;
+			background: transparent;
+			color: #fff;
+			border: solid 1px #fff;
+			text-decoration: none;
+			cursor: pointer;
+			font-size: 1.2em;
+			padding: 18px 10px;
+			width: 180px;
+			margin: 10px;
+			outline: none; 
+		}
+		button:hover {
+			transition: all 0.5s ease-in-out;
+			background: #fff;
+			border: solid 1px #fff;
+			color: rgba(255,33,229,1); 
+		}
+		
+	
+	
+	</style>
 </head>
 <body>
-	<h1>RxJS Boiler</h1>
-	<p>For more info, visit <a target="_blank" href="https://github.com/bradtraversy/rxjs_boiler">https://github.com/bradtraversy/rxjs_boiler</a></p>
-
+		<div class="wrapper">
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+			<div id="clock">
+				<span id="minutes"></span>:<span id="seconds"></span>:<span id="milliseconds"></span>
+			</div>
+			<button id="reset">Reset</button>
+		</div>
 	<script src="./dist/app.bundle.js"></script>
 </body>
 </html>
